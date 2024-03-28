@@ -1,3 +1,7 @@
+<?php
+    require "koneksi.php";
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,8 +11,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href ="/styles/styles_landing.css">
+        <link rel="stylesheet" href ="styles/styles_landing.css">
         <style>
             h1{
                 margin: 0;
