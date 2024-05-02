@@ -15,6 +15,7 @@
             <a href="#">Tentang kami</a>
             <a href="#">Semua Resep</a>
             <a href="#">Login</a>
+            <a href="index.php">Home</a>
         </nav> 
 
 
@@ -34,7 +35,7 @@
         <div class="input-sumbit">
             <button class="submit-btn" id="submit">
                 <form action="" method="POST"></form>
-                <label for="submit">submit</label>
+                <label for="submit"><a href="index.php" >submit</a></label>
             </button>
         </div>
         <div class="sign-up-link">

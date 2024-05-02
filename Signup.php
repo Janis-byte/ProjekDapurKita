@@ -12,7 +12,8 @@
         <nav class="navigation">
             <a href="#">Tentang kami</a>
             <a href="#">Semua Resep</a>
-            <a href="#">Login</a>
+            <a href="signin.php">Login</a>
+            <a href="index.php">Home</a>
         </nav> 
     </header>
 
@@ -32,7 +33,7 @@
         </div>
         <div class="input-sumbit">
             <button class="submit-btn" id="submit">
-                <label for="submit">create account</label>
+                <label for="submit"><a href="index.php" >create account</a></label>
             </button>
         </div>
         <div class="sign-up-link">

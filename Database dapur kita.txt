@@ -1,0 +1,98 @@
+
+Setting environment for using XAMPP for Windows.
+ASUS TUF Dash F15@TIAN c:\xampp
+# -u root -p
+'-u' is not recognized as an internal or external command,
+operable program or batch file.
+
+ASUS TUF Dash F15@TIAN c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database DapurKita;
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [(none)]> use DapurKita;
+Database changed
+MariaDB [DapurKita]> create table DapurKita;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [DapurKita]> show tables;
+Empty set (0.008 sec)
+
+MariaDB [DapurKita]> create DapurKita table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DapurKita table' at line 1
+MariaDB [DapurKita]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| 10r7               |
+| dapurkita          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+7 rows in set (0.002 sec)
+
+MariaDB [DapurKita]> use dapurkita
+Database changed
+MariaDB [dapurkita]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| 10r7               |
+| dapurkita          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [dapurkita]> create table user(
+    -> ID integer not null,
+    -> Nama_User varchar(30) not null,
+    -> Alamat varchar(200) not null,
+    -> primary key (ID));
+Query OK, 0 rows affected (0.015 sec)
+
+MariaDB [dapurkita]> show tables;
++---------------------+
+| Tables_in_dapurkita |
++---------------------+
+| user                |
++---------------------+
+1 row in set (0.001 sec)
+
+MariaDB [dapurkita]> desc user;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| ID        | int(11)      | NO   | PRI | NULL    |       |
+| Nama_User | varchar(30)  | NO   |     | NULL    |       |
+| Alamat    | varchar(200) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+3 rows in set (0.007 sec)
+
+MariaDB [dapurkita]> insert into user (ID,Nama_User,Alamat)
+    -> values (1234567,'Putriawan','Malang,Sawojajar');
+Query OK, 1 row affected (0.013 sec)
+
+MariaDB [dapurkita]> select * from user;
++---------+-----------+------------------+
+| ID      | Nama_User | Alamat           |
++---------+-----------+------------------+
+| 1234567 | Putriawan | Malang,Sawojajar |
++---------+-----------+------------------+
+1 row in set (0.003 sec)
+
+MariaDB [dapurkita]>
